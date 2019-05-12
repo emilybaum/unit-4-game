@@ -10,6 +10,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Mr+Bedfort" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montaga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Meddon" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Shadows+Into+Light|Thasadith" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -23,15 +27,17 @@
     <div class="container">
         <!-- title row -->
         <div class="row">
-            <div class="col-sm-12 mt-2 mb-0 text-center">
-                <h1>Restore This Place</h1>
+            <div class="col-sm-12 mt-5 mb-0 text-center">
+                <h1>Restore This Room</h1>
             </div>
         </div>
         <!-- end title row -->
+        
         <hr>
+
         <!-- instructions and change theme/something else row -->
         <div class="row mb-3 mt-0 justify-content-around">
-            <div class="col-sm-12 d-flex p-4 text-center seethrough-eb">
+            <div class="col-sm-12 d-flex px-4 text-center">
                 <div>
                     <p>You are tasked with restoring a room to bring out the <strong>true vintage character</strong> where you will be choosing your own assets. What you don't know is how many of each item you will need. You will need to choose wisely.</p>
                     <p>Each item contains a <strong>"secret value"</strong> - mix and match the items to eventually equal the Target value for each restoration project. Be sure not to go over the Target Value, otherwise you lose. Good luck!</p>
@@ -40,30 +46,38 @@
         </div>
         <!-- end instructions and change theme/something else row -->
 
-        <!-- tracking game play and wins/losses row -->
+        <hr>
+
+        <!-- tracking game play, wins/losses, and image row -->
         <div class="row mb-2">
-            <div class="col-sm-3 text-center d-flex flex-column justify-content-around">
-                <p><strong>Target value: </strong><span id="your-number" class="p-2 align-middle target-eb"></span></p>
-                <p><strong>Your total value so far: </strong><span id="total-score" class="p-2 align-middle target-eb"></span></p>
+            <div class="col-sm-3 text-center d-flex flex-column justify-content-end">
+                <p><strong>Vintage value: <br></strong><span id="your-number" class="p-2 align-middle target-eb"></span></p>
+                <p><strong>Your total value so far: <br></strong><span id="total-score" class="p-2 align-middle target-eb"></span></p>
             </div>
             
             <div class="col-sm-6 text-center">
-                <img width="100%" src="assets/images/abandoned-bedroom.jpg">
+                <img width="100%" class="vintage-eb" src="assets/images/abandoned-bedroom.jpg">
             </div>
 
-            <div class="col-sm-3 text-center d-flex flex-column justify-content-around">
-                <p><strong>Successful projects: </strong><span id="wins" class="p-2 align-middle target-eb wins-eb"></span></p>
-                <p><strong>Failed projects: </strong><span id="losses" class="p-2 align-middle target-eb losses-eb"></span></p>
+            <div class="col-sm-3 text-center d-flex flex-column justify-content-end">
+                <p><strong>Successful projects: <br></strong><span id="wins" class="p-2 align-middle target-eb wins-eb"></span></p>
+                <p><strong>Failed projects: <br></strong><span id="losses" class="p-2 align-middle target-eb losses-eb"></span></p>
             </div>
-            
-
         </div>
-        <!-- end tracking game play and wins/losses row -->
+        <!-- end tracking game play, wins/losses, and image row -->
+
+        <!-- items title start -->
+        <div class="row">
+            <div class="col-sm-12 mt-3 mb-1 text-center">
+                <h2>Choose your items:</h2>
+            </div>
+        </div>
+        <!-- items title -->
 
         <!-- images row -->
         <div class="row mb-2 justify-content-around">
             <button type="button" class="m-1 d-flex btn btn-light">
-                <div class="col-md-2 crystals d-flex align-items-center " id="crystal1">
+                <div class="col-md-2 crystals d-flex align-items-center" id="crystal1">
                     <img class="image-eb"src="assets/images/chair.png">
                 </div>
             </button>
@@ -88,7 +102,7 @@
         <!-- last row -->
         <div class="row mt-5 ending-eb">
             <div class="col-sm text-center">
-                <p class="mb-0 py-1 ending-eb">Created by Emily Baumgartner</p>
+                <p class="mb-0 py-1 ending-eb">Vintagely inspired by Emily Baumgartner</p>
             </div>
         </div>
         <!-- end last row -->

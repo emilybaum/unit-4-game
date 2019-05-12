@@ -4,26 +4,39 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Thasadith', sans-serif;
  */
 
+ /* 
+ font-family: 'Meddon', cursive;
+ font-family: 'Montaga', serif;
+ font-family: 'Mr Bedfort', cursive;
+  */
+
 #background {
     background-image: url(https://cdn10.bigcommerce.com/s-9qugz4w/products/663/images/16679/AB1941__47076.1431116834.1280.1280.jpg?c=2);
-/* background-image: linear-gradient(#fff, rgb(224, 224, 224), #999, black); */
-
 }
 
 h1 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 50px;
+    font-family: 'Meddon', cursive;
+    font-size: 45px;
     width: 100%;
+}
+
+h2 {
+    font-family: 'Meddon', cursive;
+    font-size: 30px;
+}
+
+hr {
+    border-top: 3px solid #d2cbb5;
 }
 
 
 p {
     font-size: 20px;
-    font-family: 'Thasadith', sans-serif;
+    font-family: 'Montaga', serif;
 }
 
 .target-eb {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Mr Bedfort', cursive;
     font-size: 50px;
 }
 
@@ -31,8 +44,7 @@ p {
      align-content: center;
 }
 
-.seethrough-eb {
-    /* border: 3px solid gray; */
+.container {
     background: #ffffff99;
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
@@ -42,16 +54,20 @@ p {
     width: 200px;
 }
 
+.vintage-eb {
+    border: 10px solid #d2cbb5;
+}
+
 .wins-eb {
-    color: green;
+    color: #7d9181;
 }
 
 .losses-eb {
-    color: red;
+    color: #640a14;
 }
 
 .ending-eb {
-    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Meddon', cursive;
     font-size: 14px;
     width: 100%;
 }
