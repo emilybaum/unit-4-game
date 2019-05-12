@@ -1,0 +1,61 @@
+/* 
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Roboto Slab', serif;
+font-family: 'Thasadith', sans-serif;
+ */
+
+body {
+    background-image: url(assets/images/abandoned-staircase.jpg);
+    /* background-color: blue; */
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Thasadith', sans-serif;
+}
+
+.target-eb {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+}
+
+.crystals {
+     align-content: center;
+}
+
+.instructions-eb {
+    border: 3px solid gray;
+    background: #94949450;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+}
+
+.something-eb {
+
+}
+
+.image-eb {
+    width: 200px;
+}
+
+.wins-eb {
+    color: green;
+}
+
+.losses-eb {
+    color: red;
+}
+
+.ending-eb {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 14px;
+}
+

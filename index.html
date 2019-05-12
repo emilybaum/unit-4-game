@@ -8,50 +8,85 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Shadows+Into+Light|Thasadith" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <div class="container">
+        <!-- title row -->
+        <div class="row mb-2">
+            <div class="col-sm-12 mt-2 text-center">
+                <h1>Restore This Place</h1>
+            </div>
+        </div>
+        <!-- end title row -->
 
-    <h1>Crystal Collector</h1>
+        <!-- instructions and change theme/something else row -->
+        <div class="row mb-2 justify-content-around">
+            <div class="col-sm-9 d-flex p-4 instructions-eb">
+                <p>You are tasked with restoring a room to bring out the <strong>true vintage character</strong> where you will be choosing your own assets. What you don't know is how many of each item you will need. You will need to choose wisely.</p>
+                <p>Each item contains a <strong>"secret value"</strong> - mix and match the items to eventually equal the Target value for each restoration project. Be sure not to go over the Target Value, otherwise you lose. Good luck!</p>
+            </div>
+            <div class="col-sm-2  something-eb">
+                <button type="button" class="btn btn-light d-flex">Change background</button>
+            </div>
+        </div>
+        <!-- end instructions and change theme/something else row -->
 
-    <div>
-        <p>Your Number: <span id="your-number"></span></p>
+        <!-- tracking game play and wins/losses row -->
+        <div class="row mb-2">
+            <div class="col-sm-6 text-center">
+                <p><strong>Target value: </strong><span id="your-number" class="p-2 align-middle target-eb"></span></p>
+                <p><strong>Your total value so far: </strong><span id="total-score" class="p-2 align-middle target-eb"></span></p>
+            </div>
+            <div class="col-sm-6 text-center">
+                <p><strong>Successful projects: </strong><span id="wins" class="p-2 align-middle target-eb wins-eb"></span></p>
+                <p><strong>Failed projects: </strong><span id="losses" class="p-2 align-middle target-eb losses-eb"></span></p>
+            </div>
+        </div>
+        <!-- end tracking game play and wins/losses row -->
+
+        <!-- images row -->
+        <div class="row mb-2 justify-content-around">
+            <button type="button" class="m-1 d-flex btn btn-light">
+                <div class="col-md-2 crystals d-flex align-items-center " id="crystal1">
+                    <img class="image-eb"src="assets/images/hammer.png">
+                </div>
+            </button>
+            <button type="button" class="m-1 d-flex btn btn-light">
+                <div class="col-md-2 crystals d-flex align-items-center" id="crystal2">
+                    <img class="image-eb" src="assets/images/screw-driver.png">
+                </div>
+            </button>
+            <button type="button" class="m-1 d-flex btn btn-light">
+                <div class="col-md-2 crystals d-flex align-items-center" id="crystal3">
+                    <img class="image-eb" src="assets/images/wood.png">
+                </div>
+            </button>
+            <button type="button" class="m-1 d-flex btn btn-light">
+                <div class="col-md-2 crystals d-flex align-items-center" id="crystal4">
+                    <img class="image-eb" src="assets/images/cone.png">     
+                </div>
+            </button>
+        </div>
+        <!-- end of images row -->
+
+        <!-- last row -->
+        <div class="row">
+            <div class="col-sm mt-5 text-center">
+                <p class="ending-eb">Created by Emily Baumgartner</p>
+            </div>
+        </div>
+        <!-- end last row -->
+
     </div>
-
-    <div>
-        <p>Wins: <span id="wins"></span></p>
-    </div>
-
-    <div>
-        <p>Losses: <span id="losses"></span></p>
-    </div>
-
-    <div>
-        <p>Total for your guesses: <span id="total-score"></span></p>
-    </div>
-
-       
-
-    <div class="crystals" id="crystal1">
-        <img width="200px" src="assets/images/hammer.png">
-    </div>
-
-    <div class="crystals" id="crystal2">
-        <img width="200px" src="assets/images/screw-driver.png">
-    </div>
-
-    <div class="crystals" id="crystal3">  
-        <img width="200px" src="assets/images/wood.png">
-    </div>
-
-    <div class="crystals" id="crystal4">
-        <img width="200px" src="assets/images/cone.png">
-    </div>
-  
-
-
-    
+    <!-- end of container div -->
+ 
     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
