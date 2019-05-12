@@ -5,7 +5,7 @@ $(document).ready(function () {
     var losses = 0;
     var totalScore = 0;
 
-    // UPDATES TO THE HTML ELEMENTS
+    // UPDATES TO THE INITIAL HTML ELEMENTS
     $("#your-number").html(gameNum);
     $("#wins").html(wins);
     $("#losses").html(losses);
@@ -31,7 +31,6 @@ $(document).ready(function () {
         var gameNum = Math.floor(Math.random() * 101) + 19;
         return gameNum;
     }
-
 
     // PLAYING HTE GAME - REGISTERS CLICKS
     $(".crystals").on("click", function () {
@@ -63,12 +62,6 @@ $(document).ready(function () {
         totalScore = 0
     }
 });
-
-// 
-// get new game number
-// new crystal values
-
-
 
 
 
