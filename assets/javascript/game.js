@@ -28,8 +28,8 @@ $(document).ready(function () {
 
     // GAME NUMBER GENERATOR
     function gameNumber() {
-        var gameNum = Math.floor(Math.random() * 101) + 19;
-        return gameNum;
+        var random = Math.floor(Math.random() * 101) + 19;
+        return random;
     }
 
     // PLAYING HTE GAME - REGISTERS CLICKS
@@ -52,14 +52,15 @@ $(document).ready(function () {
             alert("You lose!!");
             startNewRound();
         }
-    
     })
 
     // START A NEW ROUND
     function startNewRound() {
+        totalScore = 0;
         valToCrystalNumber();
-        gameNumber();
-        totalScore = 0
+        gameNum = gameNumber();
+        $("#your-number").html(gameNum);
+        $("#total-score").html(totalScore);
     }
 });
 
