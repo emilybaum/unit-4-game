@@ -42,14 +42,14 @@ $(document).ready(function () {
         if (totalScore === gameNum) {
             wins +=1;
             $("#wins").html(wins);
-            alert("You win!");
+            alert("You did it! Great job beating the odds with this random numbers game.");
             startNewRound();
         }
 
         else if (totalScore >= gameNum) {
             losses += 1;
             $("#losses").html(losses);
-            alert("You lose!!");
+            alert("Bummer, you lost! But don't take it personally, just try again.");
             startNewRound();
         }
     })
