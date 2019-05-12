@@ -15,38 +15,48 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="background">
+
+    <header>
+
+    </header>
     <div class="container">
         <!-- title row -->
-        <div class="row mb-2">
-            <div class="col-sm-12 mt-2 text-center">
+        <div class="row">
+            <div class="col-sm-12 mt-2 mb-0 text-center">
                 <h1>Restore This Place</h1>
             </div>
         </div>
         <!-- end title row -->
-
+        <hr>
         <!-- instructions and change theme/something else row -->
-        <div class="row mb-2 justify-content-around">
-            <div class="col-sm-9 d-flex p-4 instructions-eb">
-                <p>You are tasked with restoring a room to bring out the <strong>true vintage character</strong> where you will be choosing your own assets. What you don't know is how many of each item you will need. You will need to choose wisely.</p>
-                <p>Each item contains a <strong>"secret value"</strong> - mix and match the items to eventually equal the Target value for each restoration project. Be sure not to go over the Target Value, otherwise you lose. Good luck!</p>
-            </div>
-            <div class="col-sm-2  something-eb">
-                <button type="button" class="btn btn-light d-flex">Change background</button>
+        <div class="row mb-3 mt-0 justify-content-around">
+            <div class="col-sm-12 d-flex p-4 text-center seethrough-eb">
+                <div>
+                    <p>You are tasked with restoring a room to bring out the <strong>true vintage character</strong> where you will be choosing your own assets. What you don't know is how many of each item you will need. You will need to choose wisely.</p>
+                    <p>Each item contains a <strong>"secret value"</strong> - mix and match the items to eventually equal the Target value for each restoration project. Be sure not to go over the Target Value, otherwise you lose. Good luck!</p>
+                </div>
             </div>
         </div>
         <!-- end instructions and change theme/something else row -->
 
         <!-- tracking game play and wins/losses row -->
         <div class="row mb-2">
-            <div class="col-sm-6 text-center">
+            <div class="col-sm-3 text-center d-flex flex-column justify-content-around">
                 <p><strong>Target value: </strong><span id="your-number" class="p-2 align-middle target-eb"></span></p>
                 <p><strong>Your total value so far: </strong><span id="total-score" class="p-2 align-middle target-eb"></span></p>
             </div>
+            
             <div class="col-sm-6 text-center">
+                <img width="100%" src="assets/images/abandoned-bedroom.jpg">
+            </div>
+
+            <div class="col-sm-3 text-center d-flex flex-column justify-content-around">
                 <p><strong>Successful projects: </strong><span id="wins" class="p-2 align-middle target-eb wins-eb"></span></p>
                 <p><strong>Failed projects: </strong><span id="losses" class="p-2 align-middle target-eb losses-eb"></span></p>
             </div>
+            
+
         </div>
         <!-- end tracking game play and wins/losses row -->
 
@@ -54,38 +64,39 @@
         <div class="row mb-2 justify-content-around">
             <button type="button" class="m-1 d-flex btn btn-light">
                 <div class="col-md-2 crystals d-flex align-items-center " id="crystal1">
-                    <img class="image-eb"src="assets/images/hammer.png">
+                    <img class="image-eb"src="assets/images/chair.png">
                 </div>
             </button>
             <button type="button" class="m-1 d-flex btn btn-light">
                 <div class="col-md-2 crystals d-flex align-items-center" id="crystal2">
-                    <img class="image-eb" src="assets/images/screw-driver.png">
+                    <img class="image-eb" src="assets/images/chandelier.png">
                 </div>
             </button>
             <button type="button" class="m-1 d-flex btn btn-light">
                 <div class="col-md-2 crystals d-flex align-items-center" id="crystal3">
-                    <img class="image-eb" src="assets/images/wood.png">
+                    <img class="image-eb" src="assets/images/books.png">
                 </div>
             </button>
             <button type="button" class="m-1 d-flex btn btn-light">
                 <div class="col-md-2 crystals d-flex align-items-center" id="crystal4">
-                    <img class="image-eb" src="assets/images/cone.png">     
+                    <img class="image-eb" src="assets/images/mirror.png">     
                 </div>
             </button>
         </div>
         <!-- end of images row -->
 
         <!-- last row -->
-        <div class="row">
-            <div class="col-sm mt-5 text-center">
-                <p class="ending-eb">Created by Emily Baumgartner</p>
+        <div class="row mt-5 ending-eb">
+            <div class="col-sm text-center">
+                <p class="mb-0 py-1 ending-eb">Created by Emily Baumgartner</p>
             </div>
         </div>
         <!-- end last row -->
 
     </div>
     <!-- end of container div -->
- 
+    
+
     <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>

@@ -4,18 +4,18 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Thasadith', sans-serif;
  */
 
-body {
-    background-image: url(assets/images/abandoned-staircase.jpg);
-    /* background-color: blue; */
-    background-size: cover;
-    background-attachment: fixed;
+#background {
+    background-image: url(https://cdn10.bigcommerce.com/s-9qugz4w/products/663/images/16679/AB1941__47076.1431116834.1280.1280.jpg?c=2);
+/* background-image: linear-gradient(#fff, rgb(224, 224, 224), #999, black); */
 
 }
 
 h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
+    width: 100%;
 }
+
 
 p {
     font-size: 20px;
@@ -31,15 +31,11 @@ p {
      align-content: center;
 }
 
-.instructions-eb {
-    border: 3px solid gray;
-    background: #94949450;
+.seethrough-eb {
+    /* border: 3px solid gray; */
+    background: #ffffff99;
     font-family: 'Roboto Slab', serif;
     font-size: 50px;
-}
-
-.something-eb {
-
 }
 
 .image-eb {
@@ -57,5 +53,6 @@ p {
 .ending-eb {
     font-family: 'Shadows Into Light', cursive;
     font-size: 14px;
+    width: 100%;
 }
 
