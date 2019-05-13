@@ -37,17 +37,20 @@ $(document).ready(function () {
         var crystalValue = ($(this).attr("data-crystalvalue"));
         crystalValue = parseInt(crystalValue);
         totalScore += crystalValue;
+        click.play();
         $("#total-score").html(totalScore);
         
         if (totalScore === gameNum) {
             wins +=1;
             $("#wins").html(wins);
+            winRound.play();
             alert("You did it! Great job beating the odds with this random numbers game.");
             startNewRound();
         }
 
         else if (totalScore >= gameNum) {
             losses += 1;
+            loseRound.play();
             $("#losses").html(losses);
             alert("Bummer, you lost! But don't take it personally, just try again.");
             startNewRound();
@@ -62,6 +65,11 @@ $(document).ready(function () {
         $("#your-number").html(gameNum);
         $("#total-score").html(totalScore);
     }
+
+    // play sounds 
+    var winRound = new Audio("assets/javascript/sounds/win.mp3");
+    var click = new Audio('assets/javascript/sounds/click.mp3');
+    var loseRound = new Audio('assets/javascript/sounds/fail.mp3');
 });
 
 
